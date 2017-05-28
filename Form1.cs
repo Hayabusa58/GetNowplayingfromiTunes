@@ -37,13 +37,16 @@ namespace GetNowPlayingfromiTunes
         private void button2_Click_1(object sender, EventArgs e)
         {
             IITTrack track = app.CurrentTrack;
-            label4.Visible = true;
-            label4.Text = track.Name;
-            label5.Visible = true;
-            label5.Text = track.Artist;
-            label6.Visible = true;
-            label6.Text = track.Album;
-            System.Diagnostics.Debug.WriteLine("This is a message for Debugging.");
+            if (track != null)
+            {
+                label4.Visible = true;
+                label4.Text = track.Name;
+                label5.Visible = true;
+                label5.Text = track.Artist;
+                label6.Visible = true;
+                label6.Text = track.Album;
+                System.Diagnostics.Debug.WriteLine("This is a message for Debugging.");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,6 +54,11 @@ namespace GetNowPlayingfromiTunes
             IITTrack track = app.CurrentTrack;
             copytxt = "#nowplaying " + track.Name + " / " + track.Artist;
             Clipboard.SetText(copytxt);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

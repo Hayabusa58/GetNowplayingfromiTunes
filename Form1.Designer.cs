@@ -68,7 +68,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(125, 124);
+            this.button1.Location = new System.Drawing.Point(125, 114);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(108, 26);
             this.button1.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(43, 124);
+            this.button2.Location = new System.Drawing.Point(43, 114);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 24);
             this.button2.TabIndex = 4;
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 150);
+            this.ClientSize = new System.Drawing.Size(283, 141);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -127,7 +127,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "GetNowPlayingfromiTunes";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
