@@ -52,7 +52,7 @@ namespace GetNowPlayingfromiTunes
         private void button1_Click(object sender, EventArgs e)
         {
             IITTrack track = app.CurrentTrack;
-            copytxt = "#nowplaying " + track.Name + " / " + track.Artist;
+            copytxt = "#nowplaying " + track.Name + " / " + track.Artist + "/" + track.Album;
             Clipboard.SetText(copytxt);
         }
 
